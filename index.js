@@ -18,4 +18,19 @@ function validation (){
                 document.getElementById("result").innerHTML="Enter Password ";
                 return false;
     }
+    
+    else if (document.Formfill.cPassword.value=="")
+        {document.getElementById("result").innerHTML="Enter Confirm Password";
+        return false;
+        }
+        else if (document.Formfill.cPassword.value !== document.Formfill.Password.value){
+            document.getElementById("result").innerHTML="Password Doesn't match";
+            return false;
+    }
+
+    else if (document.Formfill.Password.value<6){
+            document.getElementById("result").innerHTML="Password must be at least 6 characters";
+            return false;
+                }
+
 }
