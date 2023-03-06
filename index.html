@@ -10,8 +10,10 @@
 
     <div class="container">
         <div class="form-box">
-            <form action="" name="Formfill">
+            <form action="" name="Formfill" onsubmit="return validation()">
                     <h2>Register</h2>
+                    <p id="result">Head</p>
+
                     <div class="input-box">
                         <i class='bx bxs-user'></i>
                         <input type="text" name="Username" placeholder="Username"/>
